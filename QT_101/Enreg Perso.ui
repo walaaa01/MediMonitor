@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>475</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>70</y>
+     <width>271</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="cinLabel">
+      <property name="text">
+       <string>Cin</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="cinLineEdit"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="nomLabel">
+      <property name="text">
+       <string>Nom</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="nomLineEdit"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="prenomLabel">
+      <property name="text">
+       <string>Prenom</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="prenomLineEdit"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="ageLabel">
+      <property name="text">
+       <string>Age</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="ageLineEdit"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="adresseLabel">
+      <property name="text">
+       <string>Adresse</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="adresseLineEdit"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="nationaliteLabel">
+      <property name="text">
+       <string>Nationalite</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="nationaliteLineEdit"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="telephoneLabel">
+      <property name="text">
+       <string>Telephone</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="date_infectionLabel">
+      <property name="text">
+       <string>Date_infection</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="date_infectionLineEdit"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="decedeLabel">
+      <property name="text">
+       <string>Decede</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLineEdit" name="decedeLineEdit"/>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="telephoneLineEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Enreg Personne dans fichier:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SendBtn">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>360</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>send</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BtnBack">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>360</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

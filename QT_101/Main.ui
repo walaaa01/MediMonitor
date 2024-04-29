@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>711</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color : rgb(200, 194, 167)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>120</y>
+      <width>611</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:22pt; font-weight:600; font-style:italic; text-decoration: underline; color:#830000;&quot;&gt;Gestion Des Personnes Infectées Par Le Virus CORONA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>0</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color : rgb(200, 194, 167)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../images-removebg-preview.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>250</y>
+      <width>271</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../covid-19-4960254_1920-1030x554.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>121</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../ISIMM-removebg-preview.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>711</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>MENU Personnes</string>
+    </property>
+    <widget class="QMenu" name="menuMise_a_jour">
+     <property name="title">
+      <string>Mise a jour </string>
+     </property>
+     <widget class="QMenu" name="menu_Modifier_Personne">
+      <property name="title">
+       <string> Modifier Personne</string>
+      </property>
+      <addaction name="actionTelephone_2"/>
+      <addaction name="action_Adresse_2"/>
+     </widget>
+     <widget class="QMenu" name="menu_Supprimer_Personne">
+      <property name="title">
+       <string> Supprimer Personne</string>
+      </property>
+      <addaction name="action_Suppression_Personne_Donne"/>
+      <addaction name="action_Suppression_Des_Personnes_d_une_natonalite_donnee"/>
+      <addaction name="action_Suppression_des_personnes_d_un_indicatif_donne_telephone"/>
+     </widget>
+     <addaction name="btn_ajouter"/>
+     <addaction name="menu_Supprimer_Personne"/>
+     <addaction name="menu_Modifier_Personne"/>
+    </widget>
+    <widget class="QMenu" name="menuRecherche_et_Affichage">
+     <property name="title">
+      <string>Recherche et Affichage</string>
+     </property>
+     <addaction name="btn_all"/>
+     <addaction name="btn_search_tel"/>
+     <addaction name="btn_indicatif"/>
+     <addaction name="btn_nationalit"/>
+     <addaction name="btn_D"/>
+     <addaction name="btn_ND"/>
+    </widget>
+    <addaction name="menuMise_a_jour"/>
+    <addaction name="menuRecherche_et_Affichage"/>
+   </widget>
+   <widget class="QMenu" name="menuGestion_des_Maladies">
+    <property name="title">
+     <string>Gestion des Maladies</string>
+    </property>
+    <widget class="QMenu" name="menu_Mise_A_jour">
+     <property name="title">
+      <string> Mise a jour</string>
+     </property>
+     <widget class="QMenu" name="menu_Modifier_les_Donner_d_une_maladie">
+      <property name="title">
+       <string> Modifier les Donner d'une maladie</string>
+      </property>
+      <addaction name="action_Nombre_d_annees"/>
+      <addaction name="action_Modifier_deces_de_0_a_1"/>
+     </widget>
+     <addaction name="btn_ajoutMaladie"/>
+     <addaction name="action_Supprimer_une_Maladie"/>
+     <addaction name="menu_Modifier_les_Donner_d_une_maladie"/>
+    </widget>
+    <widget class="QMenu" name="menu_Reacherche_affichage">
+     <property name="title">
+      <string> Reacherche , affichage</string>
+     </property>
+     <addaction name="actionContenu_du_dictionnaire_maladies"/>
+     <addaction name="actionRecherche_par_une_maladie"/>
+     <addaction name="actionRecherche_maladies_d_une_personne"/>
+     <addaction name="actionRecherche_le_pourcentage_de_chaque_maladie"/>
+     <addaction name="actionRecherche_maladies_de_chaque_personne"/>
+    </widget>
+    <addaction name="menu_Mise_A_jour"/>
+    <addaction name="menu_Reacherche_affichage"/>
+   </widget>
+   <widget class="QMenu" name="menuCalcul_et_affichage">
+    <property name="title">
+     <string>Calcul et affichage</string>
+    </property>
+    <addaction name="action_afficher_par_nationalite"/>
+    <addaction name="action_Personne_en_quarantaine"/>
+    <addaction name="action_Personnes_Decedes"/>
+    <addaction name="action_Personnes_A_risque"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuGestion_des_Maladies"/>
+   <addaction name="menuCalcul_et_affichage"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAffichage">
+   <property name="text">
+    <string>Affichage</string>
+   </property>
+  </action>
+  <action name="actionAjouter_personne">
+   <property name="text">
+    <string>Ajouter personne</string>
+   </property>
+  </action>
+  <action name="actionSuppression_personne_Donne">
+   <property name="text">
+    <string>Suppression personne Donne</string>
+   </property>
+  </action>
+  <action name="actionSuppression_des_Personnes_d_une_Nationalite_Donnes">
+   <property name="text">
+    <string>Suppression des Personnes d'une Nationalite Donnes </string>
+   </property>
+  </action>
+  <action name="actionSuppression_des_Personnes_D_un_indicatif_donne_Telephone">
+   <property name="text">
+    <string>Suppression des Personnes D'un indicatif donne(Telephone)</string>
+   </property>
+  </action>
+  <action name="actionTelephone">
+   <property name="text">
+    <string>Telephone</string>
+   </property>
+  </action>
+  <action name="action_Adresse">
+   <property name="text">
+    <string> Adresse</string>
+   </property>
+  </action>
+  <action name="actionContenu_du_dictionnaire_personne">
+   <property name="text">
+    <string>Contenu du dictionnaire personne</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_num_ro_t_l_phone">
+   <property name="text">
+    <string>Recherche par numéro téléphone</string>
+   </property>
+  </action>
+  <action name="btn_all">
+   <property name="text">
+    <string>Contenu du dictionnaire personne</string>
+   </property>
+  </action>
+  <action name="btn_search_tel">
+   <property name="text">
+    <string>Recherche par numéro téléphone</string>
+   </property>
+  </action>
+  <action name="btn_indicatif">
+   <property name="text">
+    <string>Recherche par indicatif</string>
+   </property>
+  </action>
+  <action name="btn_nationalit">
+   <property name="text">
+    <string>Recherche par nationalité</string>
+   </property>
+  </action>
+  <action name="btn_D">
+   <property name="text">
+    <string>Recherche des personnes décédés</string>
+   </property>
+  </action>
+  <action name="btn_ND">
+   <property name="text">
+    <string>Recherche des personnes non décédés</string>
+   </property>
+  </action>
+  <action name="actionTelephone_2">
+   <property name="text">
+    <string>Telephone</string>
+   </property>
+  </action>
+  <action name="action_Adresse_2">
+   <property name="text">
+    <string> Adresse</string>
+   </property>
+  </action>
+  <action name="action_Suppression_Personne_Donne">
+   <property name="text">
+    <string> Suppression Personne Donne</string>
+   </property>
+  </action>
+  <action name="action_Suppression_Des_Personnes_d_une_natonalite_donnee">
+   <property name="text">
+    <string> Suppression Des Personnes d'une natonalite donnee</string>
+   </property>
+  </action>
+  <action name="action_Suppression_des_personnes_d_un_indicatif_donne_telephone">
+   <property name="text">
+    <string> Suppression des personnes d'un indicatif donne(telephone)</string>
+   </property>
+  </action>
+  <action name="btn_ajoutMaladie">
+   <property name="text">
+    <string>Ajouter une nouvelle maladie</string>
+   </property>
+  </action>
+  <action name="action_Supprimer_une_Maladie">
+   <property name="text">
+    <string> Supprimer une Maladie</string>
+   </property>
+  </action>
+  <action name="action_Nombre_d_annees">
+   <property name="text">
+    <string> Nombre d'annees</string>
+   </property>
+  </action>
+  <action name="action_Modifier_deces_de_0_a_1">
+   <property name="text">
+    <string> Modifier deces(de 0 a 1)</string>
+   </property>
+  </action>
+  <action name="actionContenu_du_dictionnaire_maladies">
+   <property name="text">
+    <string>Contenu du dictionnaire maladies</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_une_maladie">
+   <property name="text">
+    <string>Recherche par une maladie</string>
+   </property>
+  </action>
+  <action name="actionRecherche_maladies_d_une_personne">
+   <property name="text">
+    <string>Recherche maladies d'une personne</string>
+   </property>
+  </action>
+  <action name="actionRecherche_le_pourcentage_de_chaque_maladie">
+   <property name="text">
+    <string>Recherche le pourcentage de chaque maladie</string>
+   </property>
+  </action>
+  <action name="actionRecherche_maladies_de_chaque_personne">
+   <property name="text">
+    <string>Recherche maladies de chaque personne</string>
+   </property>
+  </action>
+  <action name="action_afficher_par_nationalite">
+   <property name="text">
+    <string> afficher par nationalite</string>
+   </property>
+  </action>
+  <action name="action_Personne_en_quarantaine">
+   <property name="text">
+    <string> Personne en quarantaine</string>
+   </property>
+  </action>
+  <action name="action_Personnes_Decedes">
+   <property name="text">
+    <string> Personnes Decedes</string>
+   </property>
+  </action>
+  <action name="action_Personnes_A_risque">
+   <property name="text">
+    <string> Personnes A risque</string>
+   </property>
+  </action>
+  <action name="btn_ajouter">
+   <property name="text">
+    <string>Ajouter Personner</string>
+   </property>
+  </action>
+  <action name="actionEnreg_fichier_PERSONNE">
+   <property name="text">
+    <string>Enreg fichier PERSONNE</string>
+   </property>
+  </action>
+  <action name="actionR_cup_fichier_PERSONNE">
+   <property name="text">
+    <string>Récup fichier PERSONNE</string>
+   </property>
+  </action>
+  <action name="actionEnreg_fichier_MALADIE">
+   <property name="text">
+    <string>Enreg fichier MALADIE</string>
+   </property>
+  </action>
+  <action name="actionR_cup_fichier_MALADIE">
+   <property name="text">
+    <string>Récup fichier MALADIE</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

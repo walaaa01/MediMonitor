@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>535</width>
+    <height>417</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color : rgb(200, 194, 167)</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>40</y>
+     <width>271</width>
+     <height>319</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="cinLabel">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cin</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="cinLineEdit"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="nomLabel">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Nom</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="nomLineEdit"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="prenomLabel">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Prenom</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="prenomLineEdit"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="ageLabel">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Age</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="ageLineEdit"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="adresseLabel">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Adresse</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="adresseLineEdit"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="nationaliteLabel">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Nationalite</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="nationaliteLineEdit"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="telephoneLabel">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Telephone</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="date_infectionLabel">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Date_infection</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="date_infectionLineEdit"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="decedeLabel">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Segoe Script&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Decede</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLineEdit" name="decedeLineEdit"/>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="telephoneLineEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;MV Boli&quot;; </string>
+   </property>
+   <property name="text">
+    <string>Ajouter Personne:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SendBtn">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>380</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 13pt &quot;MV Boli&quot;; 
+background-color : rgb(170, 170, 127)</string>
+   </property>
+   <property name="text">
+    <string>Send</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BtnBack">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>380</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;MV Boli&quot;; 
+background-color : rgb(170, 170, 127)</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
